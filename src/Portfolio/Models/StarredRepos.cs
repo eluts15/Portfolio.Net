@@ -11,8 +11,10 @@ namespace Portfolio.Models
         public string Name { get; set;} // Repository name.
         public string Description { get; set; } // Displays the Description.
         public string Url { get; set; }
+        public string Language { get; set; }
         public int Stargazers_Count { get; set; } // Displays the number of stars for this particular repo. Not currently working.
         public int Watchers { get; set; }
+        public int Forks { get; set; }
 
 
 

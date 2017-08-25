@@ -17,9 +17,11 @@
             <li>@Html.DisplayFor(modelItem => starredRepo.Name)</li>
             <li>@Html.DisplayFor(modelItem => starredRepo.Description)</li>
             <li>Url: @Html.DisplayFor(modelItem => starredRepo.Url)</li>
+            <li>Primary Language Used: @Html.DisplayFor(modelItem => starredRepo.Language)</li>
             <li>Watchers: @Html.DisplayFor(modelItem => starredRepo.Watchers)</li>
             <li>Stars: @Html.DisplayFor(modelItem => starredRepo.Stargazers_Count)</li>
-        </ul>
+            <li>Forks: @Html.DisplayFor(modelItem => starredRepo.Forks)</li>
+        </ul >
         <br />
     }
 
