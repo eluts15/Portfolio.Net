@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IEnumerable<Portfolio.Models.StarredRepos>
+
+<h3>Starred Repositories</h3>
+<hr />
+
+<ol>
+    @foreach (var starredRepo in Model)
+    {
+        <li>
+            <ul>
+                <li>Repository Name: @Html.DisplayFor(modelItem => starredRepo.Name)</li> 
+            </ul>
+        </li>
+    }
+</ol>
+
+@Html.ActionLink("Back home", "Index")
