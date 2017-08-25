@@ -21,7 +21,7 @@ namespace Portfolio.Models
         public static List<StarredRepos> GetStarredRepos()
         {
                 RestClient client = new RestClient("https://api.github.com");
-                RestRequest request = new RestRequest("/users/eluts15/starred", Method.GET);
+                RestRequest request = new RestRequest("search/repositories?q=user:eluts15&sort=stars&order=desc&per_page=3", Method.GET); //I broke it hehe.
                 client.AddDefaultHeader("User-Agent", "eluts15"); // Github requires this header.
                 RestResponse response = new RestResponse();
                 Task.Run(async () =>
@@ -29,8 +29,8 @@ namespace Portfolio.Models
                     response = await GetResponseContentAsync(client, request) as RestResponse;
                 }).Wait();
 
-                JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(response.Content);
-                var starredRepositories = JsonConvert.DeserializeObject<List<StarredRepos>>(jsonResponse.ToString());
+                JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(response.Content);
+                var starredRepositories = JsonConvert.DeserializeObject<List<StarredRepos>>(jsonResponse["items"].ToString());
                 return starredRepositories;
             }
 
