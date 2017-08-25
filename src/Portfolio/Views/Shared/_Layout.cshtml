@@ -3,17 +3,37 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+   
     <title>@ViewBag.Title</title>
 
 </head>
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <p>Navbar</p>
+<body style="background-color:#524646;">
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="/" class="brand-logo">My Portfolio</a>
+            
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">LOGIN</a></li>
+                <li>@Html.ActionLink("ABOUT", "Index", "About")</li>
+                <li>@Html.ActionLink("PROJECTS", "Index", "Projects")</li>
+            </ul>
+
+        </div>
     </nav>
+   
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../../bin/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+
+
+    <div class="hiddendiv common"></div><div class="drag-target" data-sidenav="nav-mobile" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
     <div>
         @RenderBody()
     </div>
