@@ -4,19 +4,19 @@
 
 @model IEnumerable<Portfolio.Models.StarredRepos>
 
-<h3 class="header center orange-text">My Projects</h3>
+<h3 class="header center orange-text">A few Projects</h3>
 
 <div class="center">
     <br /><br />
 
     @foreach (var starredRepo in Model)
     {
-       
 
-        <ul class="header center orange-text">
-            <li>Repository Name: @Html.DisplayFor(modelItem => starredRepo.Name)</li>
-            <li>Description: @Html.DisplayFor(modelItem => starredRepo.Description)</li>
-            <li>Url:  @Html.DisplayFor(modelItem => starredRepo.Url)</li>
+
+        <ul class="header center orange-text" style="font-size:20px;">
+            <li>@Html.DisplayFor(modelItem => starredRepo.Name)</li>
+            <li>@Html.DisplayFor(modelItem => starredRepo.Description)</li>
+            <li>Url: @Html.DisplayFor(modelItem => starredRepo.Url)</li>
             <li>Watchers: @Html.DisplayFor(modelItem => starredRepo.Watchers)</li>
             <li>Stars: @Html.DisplayFor(modelItem => starredRepo.Stargazers_Count)</li>
         </ul>
