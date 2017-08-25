@@ -12,10 +12,15 @@
     {
         <li>
             <ul>
-                <li>Repository Name: @Html.DisplayFor(modelItem => starredRepo.Name)</li> 
+                <li>Repository Name: @Html.DisplayFor(modelItem => starredRepo.Name)</li>
+                <li>Description: @Html.DisplayFor(modelItem => starredRepo.Description)</li>
+                <li>Url:  @Html.DisplayFor(modelItem => starredRepo.Url)</li>
+                <li>Watchers: @Html.DisplayFor(modelItem => starredRepo.Watchers)</li>
+                <li>Stars: @Html.DisplayFor(modelItem => starredRepo.Stargazers_Count)</li>
             </ul>
-        </li>
+        </li><hr />
     }
 </ol>
+<hr />
 
 @Html.ActionLink("Back home", "Index")
