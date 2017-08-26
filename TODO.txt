@@ -1,0 +1,18 @@
+
+
+
+Back-End Stuff
+	figure out how to sort by stars
+	add user authentication/persistent data
+	make the Projects show directly rather than having a link to it
+
+
+Content
+	*add a footer
+
+
+user experience
+	 *remove "-" from Name property and seperate on " " Comedy-Club-Manager is ugly to look at. split, Join or use a regex
+	 make the Url clickable and able to navigate.
+	 *make it look better
+	 *show projects via an ajax action, refer to mrfixit
