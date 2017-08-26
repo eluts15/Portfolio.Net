@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using Portfolio.Models;
 
 namespace Portfolio.Controllers
@@ -14,7 +15,7 @@ namespace Portfolio.Controllers
 
         public IActionResult GetStarredRepos()
         {
-            var repoList = StarredRepos.GetStarredRepos();
+            List<StarredRepos> repoList = StarredRepos.GetStarredRepos();
             return View(repoList);
         }
     }

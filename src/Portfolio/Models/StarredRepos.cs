@@ -16,12 +16,10 @@ namespace Portfolio.Models
         public int Watchers { get; set; }
         public int Forks { get; set; }
 
-
-
         public static List<StarredRepos> GetStarredRepos()
         {
                 RestClient client = new RestClient("https://api.github.com");
-                RestRequest request = new RestRequest("search/repositories?q=user:eluts15&sort=&order=asc&per_page=3", Method.GET); //I broke it hehe. Now to determine why it doesn't sort by highest number of stars first.
+                RestRequest request = new RestRequest("search/repositories?q=user:eluts15&order=desc&sort=stars", Method.GET); //This endpoint just lists all the repos under this user. Where are these damn stars at. LF starsssss.
                 client.AddDefaultHeader("User-Agent", "eluts15"); // Github requires this header.
                 RestResponse response = new RestResponse();
                 Task.Run(async () =>

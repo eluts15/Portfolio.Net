@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4E684F0B-535B-446D-AAC7-E946A162D0DA}"
 	ProjectSection(SolutionItems) = preProject
 		src\Portfolio\Models\README.md = src\Portfolio\Models\README.md
+		TODO.txt = TODO.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9E5F5659-3D7D-4D02-9FE4-83CB8F7905BF}"

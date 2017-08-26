@@ -5,6 +5,12 @@ Back-End Stuff
 	figure out how to sort by stars
 	add user authentication/persistent data
 	make the Projects show directly rather than having a link to it
+	deploy it with docker and azure if its free
+
+	where are these fkn stars at. 
+		make a list of all repositories
+		can sort by asc/desc ezpz
+
 
 
 Content
@@ -16,3 +22,4 @@ user experience
 	 make the Url clickable and able to navigate.
 	 *make it look better
 	 *show projects via an ajax action, refer to mrfixit
+	 
