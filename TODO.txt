@@ -1,6 +1,8 @@
 
 
 
+refactor to show use full_name and html_url properties
+
 Back-End Stuff
 	figure out how to sort by stars
 	add user authentication/persistent data
